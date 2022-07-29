@@ -1,0 +1,21 @@
+{
+  "pessoas_buri": [
+    {
+        "name": "Ana",
+        "idade": 25,
+        "clt": true
+    },
+    {
+        "name": "Paula",
+        "idade": 20,
+        "clt": false
+    }
+  ],
+  "pessoas_capao": [
+    {
+        "name": "Andressa",
+        "idade": 19,
+        "clt": false
+    }
+  ]
+}

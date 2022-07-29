@@ -26,6 +26,7 @@ def main4(*args):
     ### MAX ##### 
     # identificando o maior número passado nos argumentos
     print(max(tuple(args[0]))) #6
+    
 def main3(*args):
     print(type(args)) # <class 'tuple'>  ## sempre será uma tupla, não importa o tipo do parâmetro passado
     print(args) #('Passando', 'Vários', 'Argumentos', 'Para', 'A', 'Função')

@@ -1,0 +1,62 @@
+<!DOCTYPE html> 
+<html> 
+	<head>  
+   		<meta charset="utf-8">
+   		<meta name="viewport" content="width=device-width, initial-scale=1">			
+		<title> Comandos Automação Residencial </title> 
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	
+	</head>
+
+	<body>
+		
+		<h1> Aplicação Flask </h1>
+    	<div>
+			<form action = "#" method = "post" id= "form1">
+				<p> <input id = "oc1" name = "ac1" type = "submit" value = "LED 1 - OFF" ></input>  </p>
+
+			</form>
+		</div>
+	</body>
+ 
+</html>
+
+<script> 
+
+var input1 = document.getElementById("oc1");
+//var lamp1 = document.getElementById("l1");
+
+$(document).ready(function(){
+
+	$("#form1").submit(function(){
+		
+		$.ajax({
+
+			data: $('#oc1').val(), 
+			type: 'POST',
+			url: 'http://localhost:4001/welcome'
+
+		})
+		.done (function(){	
+		
+			
+			alert("estado alterado."); 
+			
+
+		});
+	
+	return false;
+
+
+	});
+	
+	return false;
+
+});
+
+input1.onclick = function(){
+		input1.value = "LED 1 - OFF";
+		input1.innerHTML = "LED 1 - OFF";
+}
+
+</script> 
